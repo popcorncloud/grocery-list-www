@@ -36,25 +36,60 @@
         button:active {
             background-color:rgb(4, 54, 38)
         }
+        h4 {
+            padding: 0;
+            color: rgb(35, 156, 112);
+        }        
 
     </style>
 </head>
 
 <body>
     <h1>Grocery List</h1>
-    <h3>Don't forget to buy</h3>
+    <h3>Don't forget to buy:</h3>
+    <h4>Fruit</h4>
     <ul>
-        <li> <input type="checkbox" id="item1"> <label for="item1">🥛 Milk</label> </li>
-        <li> <input type="checkbox" id="item2"> <label for="item2">🍞 Bread</label> </li>
-        <li> <input type="checkbox" id="item3"> <label for="item3">🥚 Eggs</label> </li>
-        <li> <input type="checkbox" id="item4"> <label for="item4">🍏 Apples</label> </li>
+        <li> <input type="checkbox" id="item1"> <label for="item1">🍎 Apples</label> </li>
+        <li> <input type="checkbox" id="item2"> <label for="item2">🍐 Pears</label> </li>
+        <li> <input type="checkbox" id="item3"> <label for="item3">🍊 Oranges</label> </li>
+        <li> <input type="checkbox" id="item4"> <label for="item4">🫐 Blueberries</label> </li>
         <li> <input type="checkbox" id="item5"> <label for="item5">🍌 Bananas</label> </li>
+        <li> <input type="checkbox" id="item6"> <label for="item6">🍓 Strawberries</label> </li>
+        <li> <input type="checkbox" id="item7"> <label for="item7">🍍 Pineapples</label> </li>
+        <li> <input type="checkbox" id="item8"> <label for="item8">🥝 Kiwis</label> </li>
+        <li> <input type="checkbox" id="item9"> <label for="item9">🥭 Mangoes</label> </li>
     </ul>
-    <p>Click on the checkbox to mark an item as bought</p>
+    <h4>Vegetables</h4>
+    <ul>
+        <li> <input type="checkbox" id="item11"> <label for="item11">🥕 Carrots</label> </li>
+        <li> <input type="checkbox" id="item12"> <label for="item12">🥔 Potatoes</label> </li>
+        <li> <input type="checkbox" id="item13"> <label for="item13">🫑 Peppers</label> </li>
+        <li> <input type="checkbox" id="item14"> <label for="item14">🥒 Cucumbers</label> </li>
+        <li> <input type="checkbox" id="item15"> <label for="item15">🧄 Garlic</label> </li>
+        <li> <input type="checkbox" id="item16"> <label for="item16">🌽 Corn</label> </li>
+        <li> <input type="checkbox" id="item17"> <label for="item17">🥦 Broccoli</label> </li>
+        <li> <input type="checkbox" id="item18"> <label for="item18">🧅 Onions</label> </li>
+    </ul>
+    <h4>Breakfast foods</h4>
+    <ul>
+        <li> <input type="checkbox" id="item21"> <label for="item21">🥐 Croissants</label> </li>
+        <li> <input type="checkbox" id="item22"> <label for="item22">🥯 Bagels</label> </li>
+        <li> <input type="checkbox" id="item23"> <label for="item23">🥨 Pretzels</label> </li>
+        <li> <input type="checkbox" id="item24"> <label for="item24">🥞 Pancakes</label> </li>
+        <li> <input type="checkbox" id="item25"> <label for="item25">🧇 Waffles</label> </li>
+        <li> <input type="checkbox" id="item26"> <label for="item26">🍞 Toast</label> </li>
+        <li> <input type="checkbox" id="item27"> <label for="item27">🍩 Donuts</label> </li>
+        <li> <input type="checkbox" id="item28"> <label for="item28">🥓 Bacon</label> </li>
+        <li> <input type="checkbox" id="item29"> <label for="item29">🧁 Cupcakes</label> </li>
+    </ul>
+    <p>Click on the checkbox to mark an item as bought!</p>
+    <h4>Note:</h4> <input type="text"> 
+    <p></p>
 
     <button>Clear all</button>
-
+    
     <script>
+    
         document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
             checkbox.addEventListener('change', function() {
                 const label = document.querySelector(`label[for="${this.id}"]`);
